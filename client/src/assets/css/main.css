@@ -1,0 +1,86 @@
+/* 重置 */
+.el-dialog__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.el-dialog__title{
+  font-size: 16px;
+}
+/* 站点 */
+html{
+  background-color: #f4f5f5;
+}
+.page{
+  width: 1200px;
+  min-width:1200px;
+  margin: auto;
+}
+/* 头部 */
+.header{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header .navigator{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .el-menu.el-menu--horizontal{
+  flex: 1;
+  border-bottom: 0;
+}
+.header .search-text{
+  width: 220px;
+}
+.header .auth{
+  margin-left: 30px;
+}
+.header .auth .el-button:first-child{
+  margin-right: 15px;
+  
+}
+.header .el-dialog {
+  width: 320px;
+}
+.header .el-dialog .el-form{
+  transform: none;
+}
+.header .el-dialog .el-form .button-block{
+  width: 100%;
+}
+/* 主体 */
+.container{
+  min-height: 600px;
+  margin-top: 80px;
+}
+
+/* 侧栏 */
+.siderbar{
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+/* 底部 */
+.footer{
+  padding: 30px 0;
+  background-color: #334259;
+  color: #fff;
+  text-align: center;
+}
+
+

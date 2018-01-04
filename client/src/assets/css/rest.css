@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*CSS reset*/
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,select,button,p,span,img,th,td{ font-size:14px;font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; margin:0; padding:0; vertical-align: baseline;}
+body{color: #333;}
+/*html5*/
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{ display:block; }
+/* 重置盒子模型 */
+*,
+*:before,
+*:after { box-sizing: border-box; }
+table { border-collapse:collapse; border-spacing:0; }
+button,input{ cursor:pointer; border: none; background-color: none; }
+/*修改输入框placeholder文字默认颜色 v4*/
+input::input-placeholder,textarea::input-placeholder { color: #999; }
+input,textarea{ color: #333; color: #999\9; }
+/*去除Chrome等浏览器文本框默认发光边框*/
+input,button,select,textarea{ outline:none}
+/*去除IE10+浏览器文本框后面的小叉叉*/
+input::clear,input::reveal,input::-ms-clear,input::-ms-reveal{ display: none; }
+img{ vertical-align:middle; display:inline-block; border:none; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic; }
+em,i,b { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+li{ vertical-align: middle; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+/*v4 除去a IE点击虚线*/
+a,area,button{ outline: none; text-decoration:none; transition: all 0.3s; color: #333; }
+a:active,area:active,button:active { blr:expression_r(this.onFocus=this.blur()); }
+a:focus,area:focus,button:focus,input:focus{ outline:0; }
+a:hover{ color:#75c5f0; text-decoration:none; }
+.fullPage{ width: 100%; }
+.page{ width: 1200px; margin-right: auto; margin-left: auto; min-width: 1200px; }
+/*字体，颜色*/
+/*谷歌浏览器支持小于12px的字体*/
+.shrink{ -webkit-transform:scale(0.8); -o-transform:scale(1); display:inline-block}
+.f12{ font-size:12px; }
+.f13{ font-size:13px; }
+.f14{ font-size:14px; }
+.f16{ font-size:16px; }
+.f18{ font-size:18px; }
+.f20{ font-size:20px; }
+.f22{ font-size:22px; }
+.f24{ font-size:24px; }
+.fb{ font-weight:bold; }
+.fn{ font-weight:normal; }
+.t2{ text-indent:2em; }
+.hiddenText { text-indent: 100%; white-space: nowrap; overflow: hidden; }
+/*定位*/
+.tl{ text-align:left; }
+.tc{ text-align:center; }
+.tr{ text-align: right; }
+.fl{ float:left; _display:inline; }
+.fr{ float:right; _display:inline; }
+.vm{ vertical-align: middle; }
+.pr{ position:relative; }
+.pa{ position:absolute; }
+.hidden{ visibility:hidden; }
+.none{ display:none; }
+.block{ display:block; }
+.inlineBlock{ display: inline-block; }
+.centerWrap{ position: relative; }
+.centerWrap .center{ position: absolute; left: 0; top: 0; right: 0; bottom:0; margin: auto; } /*高度必须设置*/
+/*新版清除浮动*/
+.clearfix:before,
+.clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix{ *zoom:1; }   /*IE6、7 Hack*/
+/*表单重置*/
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] { padding: 10px 5px 8px; height: auto; }
+/*禁止多行文本框textarea拖拽*/
+textarea { resize: none; }
+/*圆点开始 v2*/
+.dot{ position: relative; }
+.dot:before{ position: absolute; width: 10px; height: 10px; border-radius: 50%; content: ''; }
+/*圆点结束*/
+/*三角样式开始 v2*/
+.triangle{ position: relative; }
+.triangle:after{ position: absolute; content: ''; height: 0; width: 0; border-width: 10px; border-style: dashed  dashed   solid dashed; border-color:  transparent  transparent #fff  transparent; }
+/*三角样式结束*/
